@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+    <title>ma love</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: bisque;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+        }
+        .envelope {
+            width: 100%;
+            height: 100%;
+            background: #d2691e;
+            position: absolute;
+            bottom: 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px
+rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: #8b4513;
+            clip-path: polygon(0 0, 100%
+0, 50% 100%);
+            transition: transform 1s;
+        }
+        .letter {
+            position: absolute;
+            width: 95%;
+            height: 130%;
+            background: white;
+            top: -5%;
+            left: 2.5%;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px
+rgba(0, 0, 0, 0.2);
+            transform: translateY(100%);
+            transition: transform 1s;
+        }
+        .text {
+            padding: 15px;
+            font-size: 14px;
+            font-family: 'great vibes', cursive;
+            line-height: 1,5px;
+            color: #333;
+        }
+        .container :hover .flap {
+            transform: rotateX(180deg);
+        }
+        .container :hover .letter {
+            transform: translateY(0);
+            transition-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="envelope">
+            <div class="flap">
+        </div>
+        <div class="letter">
+            <div class="text">
+                HIIIII cantik, i made this 4uuu!!!!<br><br>
+                i dunno how to tell u <br>
+                <strong>but danggg, im so fuckin in love with u.</strong><br><br>
+                hope ur day's getting better even when im not by ur side, ma loveeee<br><br>
+                - Z
+            </div>
+        </div>
+    </div>
+</body>
+</html>
